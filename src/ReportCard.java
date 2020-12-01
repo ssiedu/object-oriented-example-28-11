@@ -18,6 +18,6 @@ public class ReportCard {
         s3.reportCard();
         
         
-        s3.showOverallResult();
+        Student.showOverallResult();
     }
 }
