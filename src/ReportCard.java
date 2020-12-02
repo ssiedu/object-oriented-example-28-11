@@ -9,15 +9,29 @@ public class ReportCard {
         Student s2=new Student();
         Student s3=new Student();
         
-        s1.setData(111,"AAA",50);
-        s2.setData(112,"BBB", 60);
+        s1.setData(111,"AAA",90);
+        s2.setData(112,"BBB", 80);
         s3.setData(113,"CCC",30);
+         
+        //s1.showGrade();
+        //s2.showGrade();
+        //s3.showGrade();
         
-        s1.reportCard();
-        s2.reportCard();
-        s3.reportCard();
+        Student.showGrade(s1);  //here we are passing an object to method's arg.
+        Student.showGrade(s2);
+        Student.showGrade(s3);
+       
+        Student.showAvg(s1, s2);
+        Student.showAvg(s2, s3);
+        Student.showAvg(s1, s3);
+        //s1.showAvg(s2);
+        //s2.showAvg(s3);
+        //s1.showAvg(s3);
+       // s1.reportCard();
+       // s2.reportCard();
+       // s3.reportCard();
         
         
-        Student.showOverallResult();
+        //Student.showOverallResult();
     }
 }

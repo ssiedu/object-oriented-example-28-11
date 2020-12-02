@@ -7,8 +7,26 @@ public class Student {
     private static int totalPassed;
     private static int totalFailed;
     
+    public static void showAvg(Student tmp1, Student tmp2){
+       
+        System.out.println("Avg Percentagre of "+tmp1.rno+","+tmp2.rno+" is "+(tmp1.per+tmp2.per)/2);    
+        
+    }
+   
     //methods
-      
+    //if you want to pass an object to method's arg, your parameter type will be a class.
+    public static void showGrade(Student tmp){
+        //this method needs to display the Grade of a student (90+=>A, 90-80=>B, C)
+        if(tmp.per>=90){
+            System.out.println("Grade of "+tmp.rno+" is A");
+        }else if(tmp.per>=80){
+            System.out.println("Grade of "+tmp.rno+" is B");
+        }else{
+            System.out.println("Grade of "+tmp.rno+" is C");
+        }
+    }
+            
+    
     public static void showOverallResult(){
         System.out.println("Total Passed Candidates : "+totalPassed);
         System.out.println("Total Failed Candidates : "+totalFailed);
