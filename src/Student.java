@@ -6,17 +6,18 @@ public class Student {
     private int per;        //one copy per object
     private static int totalPassed;
     private static int totalFailed;
-    
+  
+    public static void showAvg(Student tmp1, Student tmp2, Student tmp3, Student tmp4){
+        System.out.println("Avg Percentage of "+tmp1.rno+","+tmp2.rno+","+tmp3.rno+","+tmp4.rno+" is "+(tmp1.per+tmp2.per+tmp3.per+tmp4.per)/4);    
+    }
+    public static void showAvg(Student tmp1, Student tmp2, Student tmp3){
+        System.out.println("Avg Percentage of "+tmp1.rno+","+tmp2.rno+","+tmp3.rno+" is "+(tmp1.per+tmp2.per+tmp3.per)/3);    
+    }
     public static void showAvg(Student tmp1, Student tmp2){
-       
         System.out.println("Avg Percentagre of "+tmp1.rno+","+tmp2.rno+" is "+(tmp1.per+tmp2.per)/2);    
-        
     }
    
-    //methods
-    //if you want to pass an object to method's arg, your parameter type will be a class.
     public static void showGrade(Student tmp){
-        //this method needs to display the Grade of a student (90+=>A, 90-80=>B, C)
         if(tmp.per>=90){
             System.out.println("Grade of "+tmp.rno+" is A");
         }else if(tmp.per>=80){
