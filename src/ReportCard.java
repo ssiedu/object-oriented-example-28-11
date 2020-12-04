@@ -22,8 +22,8 @@ public class ReportCard {
         //Student.showGrade(s2);
         //Student.showGrade(s3);
        
-        Student.showAvg(s1,s2);
-        Student.showAvg(s1,s2,s3);
+        Student.showAvg(s1,s2);         //{s1,s2}
+        Student.showAvg(s1,s2,s3);      //{s1,s2,s3}
         Student.showAvg(s1,s2,s3,s4);
         
         //Student.showAvg(s2, s3);

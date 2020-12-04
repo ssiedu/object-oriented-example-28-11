@@ -7,6 +7,17 @@ public class Student {
     private static int totalPassed;
     private static int totalFailed;
   
+    public static void showAvg(Student... s){
+        //to find avg we will add the per of all students and will divide it by no of students
+        int sum=0;
+        //this loop will compute the sum
+        for(int i=0; i<s.length; i++){
+            sum=sum+s[i].per;
+        }
+        //now we will display avg
+        System.out.println("AVG PER : "+(sum/s.length));
+    }
+    /*
     public static void showAvg(Student tmp1, Student tmp2, Student tmp3, Student tmp4){
         System.out.println("Avg Percentage of "+tmp1.rno+","+tmp2.rno+","+tmp3.rno+","+tmp4.rno+" is "+(tmp1.per+tmp2.per+tmp3.per+tmp4.per)/4);    
     }
@@ -16,7 +27,8 @@ public class Student {
     public static void showAvg(Student tmp1, Student tmp2){
         System.out.println("Avg Percentagre of "+tmp1.rno+","+tmp2.rno+" is "+(tmp1.per+tmp2.per)/2);    
     }
-   
+    */
+    
     public static void showGrade(Student tmp){
         if(tmp.per>=90){
             System.out.println("Grade of "+tmp.rno+" is A");
