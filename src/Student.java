@@ -60,8 +60,12 @@ public class Student {
         }
         System.out.println("________________________________________________");
     }
-    
-    public  void setData(int a, String b, int c){
+    public Student(){}
+    public Student(int x, String y){
+        rno=x;
+        name=y;
+    }
+    public  Student(int a, String b, int c){
         rno=a;      //here we are assigning the value of parameter a to instance variable rno
         name=b;     //here we are assinging the value of parameter b to instance variable name
         per=c;      //here we are assigning the value of parameter c to class variable per
