@@ -60,14 +60,23 @@ public class Student {
         }
         System.out.println("________________________________________________");
     }
-    public Student(){}
+    void f1(){
+        
+    }
+    public Student(){
+        f1();
+    }
     public Student(int x, String y){
+        this();
         rno=x;
         name=y;
     }
+                       
     public  Student(int a, String b, int c){
-        rno=a;      //here we are assigning the value of parameter a to instance variable rno
-        name=b;     //here we are assinging the value of parameter b to instance variable name
-        per=c;      //here we are assigning the value of parameter c to class variable per
+        //System.out.println("hello");
+        this(a,b); //calling a two arg constructor (int,String)
+        per=c;      
     }
+    
+     
 }
