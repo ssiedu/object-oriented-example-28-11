@@ -2,26 +2,29 @@
 public class Test {
     
     private int x, y;
-                          //30
-    public void setData(int a){     //a method to initialize x only
-        x=a;
-    }
-                        // 30     40
-    public void setData(int p, int q){  //a method to initialize x and y both.
-        setData(p); //calling one arg setData to initialize x
-        y=q;
+    
+    public Test(int a, int b){
+        x=a; y=b;
     }
     public void show(){
-        System.out.println(x+","+y);    //this show method will display x and y members of calling object
+        System.out.println(x+","+y);    
     }
     public static void main(String[] args) {
   
-        Test t1=new Test();
-        Test t2=new Test();
-        t1.setData(10);
-        t2.setData(30, 40);
+        Test t1;
+        new Test(10,20);
+        Test t2=new Test(30,40);
+        Test t3=t2;
+        t1=t2;
         t1.show();
         t2.show();
-        
+        t3.show();
+        System.out.println("_____________________________________");
+        t3=new Test(50,60);
+        t2=t3;
+        t1=new Test(70,80);
+        t1.show();
+        t2.show();
+        t3.show();
     }
 }
