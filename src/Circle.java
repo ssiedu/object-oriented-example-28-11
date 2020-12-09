@@ -7,8 +7,8 @@ public class Circle {
     
     //member-functions (methods) (to perform the operations on the object
     
-    public void setRadius(double r){
-        radius=r;
+    public void setRadius(double radius){
+        this.radius=radius;         //this.radius (instance)        ,   radius  (local)
     }
     
     public void computeArea(){

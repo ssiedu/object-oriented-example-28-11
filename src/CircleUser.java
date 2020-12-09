@@ -10,15 +10,7 @@ public class CircleUser {
         c1.computeArea();
         c1.computeCircumference();
         
-        Circle c2=new Circle();
-        c2.setRadius(200);
-        c2.computeArea();
-        c2.computeCircumference();
-        
-        Circle c3=new Circle();
-        c3.setRadius(300);
-        c3.computeArea();
-        c3.computeCircumference();
+    
         
         
         

@@ -1,32 +1,29 @@
 
 public class Demo {
 
-    int a, b;           //non-static (instance)
-    static int p, q;    //static  (class)
+    private int a, b;
     
-    //non-static method
+    public Demo(int x, int y){
+        a=x; b=y;
+    }
+ 
     public void show(){
-        System.out.println(a+","+b);    //non-static variables
-        System.out.println(p+","+q);    //static variables
+        int a=5;
+        System.out.println(this.a);
+        System.out.println(b);
+        System.out.println("______________________");
     }
     
-    //static method
-    public static void disp(){
-        //System.out.println(a+","+b);    //non-static variables    (non-static var cant be directly used in static methods)
-        System.out.println(p+","+q);    //static variables
-    }        
+            
     
     public static void main(String[] args) {
 
-        Demo d1=new Demo();
-        Demo d2=new Demo();
-             
-        d1.a=10; d1.b=20;
-        d2.a=30; d2.b=40;
+        Demo d1=new Demo(10,20);
+        Demo d2=new Demo(30,40);
         
-        p=50; q=60;
-        
-        
+        d1.show();
+        d2.show();
+                
         
     }
 }

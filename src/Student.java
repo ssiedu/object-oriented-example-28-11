@@ -63,20 +63,28 @@ public class Student {
     void f1(){
         
     }
-    public Student(){
-        f1();
+
+    public Student() {
     }
-    public Student(int x, String y){
-        this();
-        rno=x;
-        name=y;
+    
+    public Student(int rno, String name) {
+        this.rno = rno;
+        this.name = name;
     }
-                       
-    public  Student(int a, String b, int c){
-        //System.out.println("hello");
-        this(a,b); //calling a two arg constructor (int,String)
-        per=c;      
+
+    
+    
+    public Student(int rno, String name, int per) {
+        this.rno = rno;
+        this.name = name;
+        this.per = per;
     }
+
+    
+    
+    
+    
+    
     
      
 }
